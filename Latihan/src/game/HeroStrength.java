@@ -11,8 +11,8 @@ public class HeroStrength extends Hero{
     @Override
     public void display() {
         super.display();
-        System.out.println("Tipe: " + this.tipe);
-        System.out.println("=================");
+        System.out.println("Tipe\t\t: " + this.tipe);
+        System.out.println("==========================");
     }
 
     @Override

@@ -11,11 +11,11 @@ public class Hero {
     }
 
     public void display(){
-        System.out.println("=== Stat Hero ===");
-        System.out.println("Nama: " + this.nama);
-        System.out.println("HP: " + this.hp);
-        System.out.println("Attack Power: " + this.attackPower);
-        System.out.println("=================");
+        System.out.println("======= Stat Hero ========");
+        System.out.println("Nama\t\t: " + this.nama);
+        System.out.println("HP\t\t: " + this.hp);
+        System.out.println("Attack Power\t: " + this.attackPower);
+        System.out.println("==========================");
     }
 
     public void berlatih(){
