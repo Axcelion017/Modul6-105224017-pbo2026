@@ -12,7 +12,7 @@ public class Karyawan {
         setRatingKinerja(ratingKinerja);
         this.gajiPokok = gajiPokok;
         
-    }
+    } //Constructor dari super class
 
     public String getIdKaryawan(){
         return this.idKaryawan;
@@ -40,7 +40,7 @@ public class Karyawan {
         }else{
             this.ratingKinerja = 3.0;
         }
-    }
+    } //Verifikasi rating kerja yang diinput jika masih dalam rentang dlaam 1 sampai 5 maka input valid sedangkan jika tidak valid maka akan di set default yaitu 3
 
     public double hitungGajiTotal(){
         int masaKerja = 2026 - this.tahunMasuk;
@@ -52,8 +52,7 @@ public class Karyawan {
             return total*0.9;
         }
         return total;
-        
-    }
+    } //Menghitung hitung gaji jika diatas 0 maka akan ada bonus 5 persen dari gaji pokok, kemudian jika rating suatu karyawan dibawah 2.5 maka akan dipotong 10 persen dari total gaji yang sudah ditambah loyalitas dan gaji pokok
 
     public void displayInfo(){
         System.out.println("ID Karyawan \t\t: " + getIdKaryawan());

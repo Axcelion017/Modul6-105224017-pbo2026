@@ -8,7 +8,7 @@ public class Developer extends Karyawan {
         super(idKaryawan, nama, tahunMasuk, ratingKinerja, gajiPokok);
         setLevel(level);
         this.jumlahBugFix = jumlahBugFix;
-    }
+    } //Developer dengan identifikasi tambahan level dan jumlah bug fix
 
     public String getLevel(){
         return this.level;
@@ -26,7 +26,7 @@ public class Developer extends Karyawan {
         }else{
             this.level = "Junior";
         }
-    }
+    } //Memvalidasi jika input untuk level developer adalah antara Senior, Mid, dan Junior, jika tidak valid maka akan set default Junior
 
     @Override
     public double hitungGajiTotal(){
@@ -43,9 +43,8 @@ public class Developer extends Karyawan {
             double bonusbug = this.jumlahBugFix * 50000;
             total += bonusbug;
         }
-
         return total;
-    }
+    }//Override dari kelas karyawan dengan ekstensi khusus developer dengan tunjangan berdasarkan level dan jika kinerja lebih dari sama dengan 3.0 maka mendapatkan bonus bug per bugnya adalah 50000
 
     @Override
     public void displayInfo(){

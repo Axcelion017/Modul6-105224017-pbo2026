@@ -8,7 +8,7 @@ public class Manajer extends Karyawan{
         super(idKaryawan, nama, tahunMasuk, ratingKinerja, gajiPokok);
         this.divisi = divisi;
         this.jumlahAnggotaTim = jumlahAnggotaTim;
-    }
+    }//Manajer dengan identifikasi tambahan berupa divis dan jumlah anggota tim
 
     public String getDivisi(){
         return this.divisi;
@@ -27,7 +27,7 @@ public class Manajer extends Karyawan{
             total += (total*0.15);
         }  
         return total;
-    }
+    }//Override hitung gaji total dari super class dengan tambahan tunjangan yang didapatkan berdasarkan jumlah anggota tim serta jika rating kinerja lebih dari sama denga 4.5 maka mendapatkan bonus 15 persen dari gaji yang sudah ditambahlan dengan tunjangan + gaji pokok
 
     @Override
     public void displayInfo(){
